@@ -1,0 +1,15 @@
+后端: JeecgSystemApplication[本地启动-独立的]  JeecgGatewayApplication[云启动,结合SpringCloud-独立的]
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8080/jeecg-boot/
+	External: 	http://192.168.56.1:8080/jeecg-boot/
+	Swagger-ui: 	http://192.168.56.1:8080/jeecg-boot/swagger-ui.html
+	Doc文档: 	http://192.168.56.1:8080/jeecg-boot/doc.html
+    Druid地址:   http://localhost:8080/jeecg-boot/druid/login.html  admin/123456
+
+前端:
+http://192.168.2.100:3000/dashboard/analysis  admin/123456
+http://127.0.0.1:3000/dashboard/analysis  admin/123456
+
+PS：前端访问登录druid会被跨域拦截，因此登录需要使用localhost/127.0.0.1
+猜测: 前端写死了druid的登录页面Ip是127.0.0.1
+
